@@ -13,6 +13,8 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="css/petstyle.css">
     <link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Joti+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -20,44 +22,57 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-	  		<a class="navbar-brand">Pet Show <i class="fa fa-paw" aria-hidden="true"></i></a>
-	  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
-	    			<span class="navbar-toggler-icon"></span>
-	  			</button>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">  
+    <a class="navbar-brand" id="pet" href="index.html">Pet Show <img src="icone/pata.png"></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-	 	<div class="collapse navbar-collapse" class="menu" id="navbarColor01">
-	    	<ul class="navbar-nav mr-auto">
-	      		<li class="nav-item active">
-	        		<a class="nav-link" href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span class="sr-only">(current)</span></a>
-	      		</li>
-	      		
-	      		<li class="nav-item">
-	        		<a class="nav-link" href="servicos.html">Serviços</a>
-	      		</li>
-	      		<li class="nav-item">
-	       			<a class="nav-link" href="#">Cadastro</a>
-	      		</li>
-	      		<li class="nav-item dropdown">
-    				<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Produtos</a>
-    	<div class="dropdown-menu">
-      				
-      				<a class="dropdown-item" href="#"><i class="fa fa-stethoscope" aria-hidden="true"></i>><u>Medicamentos</u></a>
-      				<a class="dropdown-item" href="#"><i class="fa fa-pied-piper" aria-hidden="true"></i>><u>Roupas e Acessórios</u></a>
-      <div class="dropdown-divider"></div>
-      				<a class="dropdown-item" href="#">Separated link</a>
-      			</div>
-      			</li>
-      			</div>	
-	    	</ul>
-	    	<form class="form-inline my-2 my-lg-0">
-	      		<input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
-	      		<button class="btn btn-secondary my-2 my-sm-0" type="submit">Pesquisar</button>
-	    	</form>
-	 	</div>
-	 	</nav>
+    <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i><span class="sr-only"></span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="racao.html">Ração</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="roupaacessorio.html">Roupas & Acessórios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="medicamentos.html"><i class="fa fa-medkit" aria-hidden="true"></i></i> Medicamentos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cadastro.html">Cadastro</a>
+            </li>
+        </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 teste" type="text" placeholder="Pesquise Aqui">
+      <button class="btn btn-primary my-2 my-sm-0" type="submit" style="background-color: #283593;"><i class="fa fa-search" aria-hidden="true"></i></button>
+    </form>
+    
+    <a class="menu-bar" data-toggle="collapse" href="#menu"><span class="bars"></span>
+    </a>
+  
+      <ul class="navbar-nav ">
+    <li class="nav-item " >
+    <a class="nav-link login" aria-hidden="true" href="#modalLogin" data-toggle="modal" data-target="#modalLogin">
+      <i class="fa fa-user-circle fa-2x" aria-hidden="true" ></i></a>
+    </li>
+  </ul>
+  </div>
+    </nav>
 	 	<!-- _________________________________________________________________ -->
-	<p> <center id="prod">Medicamentos</center></p>
+	<p> <center id="prod">Medicamentos</center></p> 
 	<div class="container" id="borda">
       
       <div class="row">
@@ -202,12 +217,20 @@
     </div><!-- End container -->
 
 	 	<!-- ---------------------------------------------------------------------------- -->
-
+<h3 class="slogan text-center">Pet Show, ótimo para seu cão, perfeito para o seu bolso!</h3>
 	</body>
 
-	<footer class="bg-dark rodape">
-         <div class="row conteudo">
+  <footer class="bg-dark rodape">
+         
+         <div class="text-center">
+    <h3>Fale conosco</h3>
+    <p>Faça-nos uma visita! Nosso endereço é: Rua Manoel Cardoso - Nº: 35 - Centro - Nova Iguaçu - Rio de Janeiro. Nossos números para contato são:</p>
+    <p><i class="fa fa-phone" aria-hidden="true"></i> (21) 4002-8922 | <i class="fa fa-whatsapp" aria-hidden="true"></i> (21) 99234-5678</p><p>Estamos esperando o seu contato!</p>
+    </div>
+  
+          <div class="row conteudo">
             <div class="col-xl-12 text-center">
+              <p>Siga-nos nas redes sociais e fique ligado nas novidades!</p>
               <a href="#"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-github-square fa-3x" aria-hidden="true"></i></a>
               <a href="#"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
@@ -215,14 +238,9 @@
               <a href="#"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a>
             </div>
         </div>
-        <div class="row">
             <div class="col-xl-12 text-center">
               <h6>Equipe de Desenvolvedores</h6>
-	              <p>Cristiano Medeiros<a href="https://www.facebook.com/cristiano.medeiros.716"><span><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></span></a></p>
-	              <p>Kaio Santos<a href="https://www.facebook.com/kaio.barros.90?ref=br_rs"><span><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></span></a></p>
-	              <p>Salum Rodrigues<a href="https://www.facebook.com/salum.rodrigues"><span><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></span></a></p>
-	              <p>Yuri Luiz<a href="https://www.facebook.com/yuri.luiz2"><span><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></span></a></p>
+                <p><a href="https://www.facebook.com/cristiano.medeiros.716">Cristiano Medeiros</a> | <a href="https://www.facebook.com/kaio.barros.90?ref=br_rs">Kaio Santos</a> | <a href="https://www.facebook.com/salum.rodrigues">Salum Rodrigues</a> | <a href="https://www.facebook.com/yuri.luiz2">Yuri Luiz</a></p>
             </div>
-        </div>        
-      </footer> 
+      </footer>
 </html>
